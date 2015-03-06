@@ -1,0 +1,44 @@
+Thread 0x26949ae8
+
+  locals:
+
+Thread 0x26949b50
+
+  locals:
+
+Thread 0x26949bb8
+  at java.lang.Object.wait(J)V (Native Method)
+  at java.lang.ref.ReferenceQueue.remove(J)Ljava/lang/ref/Reference; (ReferenceQueue.java:118)
+  at java.lang.ref.ReferenceQueue.remove()Ljava/lang/ref/Reference; (ReferenceQueue.java:134)
+  at java.lang.ref.Finalizer$FinalizerThread.run()V (Finalizer.java:159)
+
+  locals:
+    objectId=0x26949c28, line=1
+    objectId=0x26949c20, line=1
+    objectId=0x26949c28, line=2
+    objectId=0x26949bb8, line=3
+
+Thread 0x26949c40
+  at java.lang.Object.wait(J)V (Native Method)
+  at java.lang.Object.wait()V (Object.java:485)
+  at java.lang.ref.Reference$ReferenceHandler.run()V (Reference.java:116)
+
+  locals:
+    objectId=0x26949ca8, line=1
+    objectId=0x26949c40, line=2
+    objectId=0x26949ca8, line=2
+
+Thread 0x26949d58
+  at java.util.Arrays.copyOf([Ljava/lang/Object;ILjava/lang/Class;)[Ljava/lang/Object; (Arrays.java:2760)
+  at java.util.Arrays.copyOf([Ljava/lang/Object;I)[Ljava/lang/Object; (Arrays.java:2734)
+  at java.util.ArrayList.ensureCapacity(I)V (ArrayList.java:167)
+  at java.util.ArrayList.add(Ljava/lang/Object;)Z (ArrayList.java:351)
+  at doris.practice.springIocPractice.service.OomTest.main([Ljava/lang/String;)V (OomTest.java:23)
+
+  locals:
+    objectId=0x270bf450, line=0
+    objectId=0x2c97b140, line=0
+    objectId=0x26949cb0, line=3
+    objectId=0x27a3f4a8, line=3
+    objectId=0x26949cb0, line=4
+
