@@ -15,7 +15,7 @@ public class OtherAdaptServiceImpl extends AdapteServiceImpl{
 	@Override
 	public void sayHello() {
 		// TODO Auto-generated method stub
-		System.out.println("其他接口");
+		System.out.println("OtherAdaptServiceImpl");
 	}
 
 }

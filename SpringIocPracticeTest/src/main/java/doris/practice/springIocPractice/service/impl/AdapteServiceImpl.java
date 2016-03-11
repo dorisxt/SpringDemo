@@ -14,7 +14,6 @@ import doris.practice.springIocPractice.service.IAdapteService;
 @Service
 public class AdapteServiceImpl implements IAdapteService{
 
-	@Override
 	public void sayHello() {
 		// TODO Auto-generated method stub
 		System.out.println("default");

@@ -1,15 +1,3 @@
-/*
- * 项目名:      农夫山泉小瓶水系统
- * 文件名:      LoginController.java
- * 类名:        LoginController
- *
- * 版权声明:
- *      本系统的所有内容，包括源码、页面设计，文字、图像以及其他任何信息，
- *      如未经特殊说明，其版权均属农夫山泉股份有限公司所有。
- *
- *      Copyright (c) 2013 农夫山泉股份有限公司
- *      版权所有
- */
 package doris.practice.springIocPractice.controller;
 
 import java.util.HashMap;
@@ -24,10 +12,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import doris.practice.springIocPractice.service.LoginService;
 import doris.practice.springIocPractice.service.impl.AdapteServiceImpl;
 
+ 
 /**
- * 类名:		LoginController
- * 描述:		TODO
- * @author 	tingxing
+ * @author xingting
  *
  */
 @Controller
@@ -38,7 +25,7 @@ public class LoginController {
     private LoginService loginService;
     
     @RequestMapping(value = "/doLoingin", method = RequestMethod.POST)
-    @ResponseBody
+//    @ResponseBody
     public String login(@RequestParam String userName, @RequestParam String password ) throws Exception{
         HashMap<String,String> configMap = new HashMap<String,String>();
         configMap.put("hd", "doris.practice.springIocPractice.service.impl.HdAdapteServiceImpl");
@@ -49,7 +36,8 @@ public class LoginController {
         	 Class classObj2 = Class.forName((String)configMap.get("other"));
              AdapteServiceImpl service2 = (AdapteServiceImpl)classObj2.newInstance();
              	service2.sayHello();
-    	return loginService.login();
+        loginService.login();
+    	return "mq_sender";
     }
     
     @RequestMapping(value = "/signon", method = RequestMethod.GET)

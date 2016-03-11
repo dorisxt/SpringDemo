@@ -11,4 +11,8 @@ public class TestClass {
 	public void inc(int i){
 		
 	}
+	
+	public static void  main(String[] args){
+		System.out.println(Math.random());
+	}
 }

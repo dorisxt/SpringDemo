@@ -14,7 +14,7 @@ public class HdAdapteServiceImpl extends AdapteServiceImpl{
 
 	@Override
 	public void sayHello() {
-	   System.out.println("º£¶¦½Ó¿Ú");
+	   System.out.println("HdAdapteServiceImpl");
 	}
 
 }

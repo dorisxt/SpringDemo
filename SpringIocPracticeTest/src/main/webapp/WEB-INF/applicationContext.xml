@@ -20,8 +20,21 @@
 	http://www.springframework.org/schema/util/spring-util-3.0.xsd
 	http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.0.xsd">
 	
+	 <!-- 动态加载环境properties文件 -->
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location">
+			<value>/WEB-INF/dev-config.properties</value>
+		</property>
+		<property name="fileEncoding" value="utf-8" />
+	</bean>
+	
 	<!-- 扫描上下文 -->
 	<context:component-scan base-package="doris.practice.springIocPractice" />
 	<context:annotation-config />
+	
+	
+	
+    <import resource="spring-mq-config.xml" />
  
 </beans>
